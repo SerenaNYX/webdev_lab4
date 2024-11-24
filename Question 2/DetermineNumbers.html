@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate numbers</title>
+
+    <script>
+        function checkInput() {
+            var inputValue = document.getElementById("userInput").value; 
+            var num = parseFloat(inputValue)
+            if(num < 10) {
+                alert("Less than 10");
+            } else if(num > 10) {
+                alert("More than 10");
+            } else if(num == 10) {
+                alert("Exactly 10");
+            }
+            else {
+                alert("Not a number");
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <input type="text" id="userInput" placeholder="Enter a number">
+    <button onclick="checkInput()">Check</button>
+</body>
+</html>
